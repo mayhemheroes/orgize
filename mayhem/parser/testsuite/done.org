@@ -1,0 +1,13 @@
+* DONE Title :tag:
+CLOSED: [2024-01-02 Tue 10:00]
+:PROPERTIES:
+:ID: abc
+:END:
+
+#+BEGIN_QUOTE
+quote
+#+END_QUOTE
+
+\begin{equation}
+x^2
+\end{equation}

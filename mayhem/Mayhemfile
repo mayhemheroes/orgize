@@ -1,0 +1,12 @@
+# libFuzzer target: /mayhem/parser is a cargo-fuzz (libfuzzer-sys) binary. `libfuzzer: true`
+# tells Mayhem to drive it as a libFuzzer harness (the engine delivers inputs).
+project: orgize
+target: parser
+
+cmds:
+  - cmd: /mayhem/parser
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parser/testsuite
